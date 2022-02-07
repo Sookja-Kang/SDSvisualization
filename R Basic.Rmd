@@ -1,0 +1,25 @@
+---
+title: "Basic function"
+author: "Sookja Kang"
+date: "1/25/2021"
+output: html_document
+---
+```{r}
+library(ggplot2)
+knitr::opts_chunk$set(echo = FASLE)
+```
+
+
+```{r}
+ggplot(mtcars, aes(disp, mpg)) + geom_point()
+```
+Let's hide the library chunks
+echo = FALSE or include = FALSE
+```{r echo = FALSE}
+{r include = FALSE}
+```
+
+
+include fuction hides both code and outcome
+eval = FALSE --> shows only codes
+echo = FALSE -->  no codes, only outcomes
